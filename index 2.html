@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Escape Room</title>
+    <link rel="stylesheet" href="style.css"
+</head>
+
+<body>
+    <div id="timer-box">
+        You have 20 minutes before school alarm system activates. Hurry!
+    </div>
+    <h1 id="room-title">My Escape Room</h1>
+    <p>Welcome! Work through puzzles to escape.</p>
+    <h2>Story So Far</h2>
+    <p>You wake up in an empty classroom after hours. Somehting feels wrong.</p>
+
+    <h2>Your Objective</h2>
+    <p>Search the room, gather clues, and unlock the exit before time runs out.</p>
+    <ol>
+        <li>Check the desk.</li>
+        <li>Examine the whiteboard.</li>
+        <li>Search the bookshelf.</li>
+        <li>Decode the hidden message.</li>
+        <li>Open the locked door.</li>
+    </ol>
+    <h2>Room Image</h2>
+    <img id="room-image" src="Design Logo Escape.png" alt="The classroom where the scape room begins" width="300">
+    <h2>Possible Clues</h2>
+     <ul>
+        <li class="clue">A note under the desk</li>
+        <li class="clue">Numbers on the board</li>
+        <li class="clue">A locked drawer</li>
+        <li class="clue">A poster with circled letters</li>
+     </ul>
+     <p id="secret-message" style="display:none; font-weight: bold;">
+        The number on the whiteboard might be backwards...
+     </p> 
+     <h2>Locked Objects</h2>
+     <table id="locked objects">
+        <tr>
+            <th>Object</th>
+            <th>Status</th>
+            <th>Hint</th>
+        </tr>
+        <tr>
+            <td>Door</td>
+            <td>Locked</td>
+            <td>Needs a 4-digit code</td>
+        </tr>
+        <tr>
+            <td>Desk Drawer</td>
+            <td>Jammed</td>
+            <td>Might open with leverage</td>
+        </tr>
+        <tr>
+            <td>Cabinet</td>
+            <td>Locked</td>
+            <td>Key could be hidden nearby</td>
+        </tr>
+     </table>
+     <h2>Door Lock</h2>
+     <input id="door-code" placeholder="Enter 4-digit code">
+     <button id="submit-code">Unlock</button>
+     <p id="code-result"></p>
+     <script src="script.js"></script>
+</body>
+
+</html>
